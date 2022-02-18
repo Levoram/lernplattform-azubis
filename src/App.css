@@ -1,0 +1,61 @@
+.centerbox {
+  text-align: center;
+  background-color: white;
+  width: 50%;
+  min-width: 960px;
+  margin: 1em auto;
+  padding: 1em;
+}
+
+.centerbox > h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.centerbox > p {
+  font-size: 1.25rem;
+}
+
+.connector-bar {
+  background-color: #66ccff;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 0.3em;
+  overflow: hidden;
+  z-index: 20;
+  clear: both;
+}
+.connector-bar-inner {
+  background-color: #006699;
+  width: 75%;
+  height: 100%;
+  top: 0;
+  right: -98px;
+  transform: skew(-18deg);
+}
+
+.gridbox {
+  margin: 1em auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  row-gap: 5px;
+  grid-template-rows: 1fr 1fr;
+  background-color: #fff;
+  padding: 1em 5em 3em 5em;
+  color: white;
+}
+::placeholder {
+  color: #fff;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
